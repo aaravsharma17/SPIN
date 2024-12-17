@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsIn | Play. Compete. Win</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <header>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>SportsIn</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-football-ball"></i> Sports</a></li>
+            <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+            <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video autoplay muted loop id="background-video">
+            <source src="assets/video/sportsin.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Connect With Local Sports Players</h1>
+            <button id="hero-register-btn">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            SportsIn is a platform designed to bring together local sports enthusiasts. Find players, form teams,
+            and participate in tournaments with ease!
+        </p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Platform Features</h2>
+        <div class="feature-container">
+            <div class="feature-box">
+                <i class="fa-solid fa-users"></i>
+                <h3>Find Local Players</h3>
+                <p>Discover players in your area and form teams.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa-solid fa-trophy"></i>
+                <h3>Join Tournaments</h3>
+                <p>Participate in tournaments and showcase your talent.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa-solid fa-user-plus"></i>
+                <h3>Build Your Network</h3>
+                <p>Connect with like-minded sports enthusiasts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Pop-Up Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Register</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                
+                <label for="sport">Favorite Sport:</label>
+                <input type="text" id="sport" placeholder="Your favorite sport" required>
+                
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 SportsIn | Follow us on</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
